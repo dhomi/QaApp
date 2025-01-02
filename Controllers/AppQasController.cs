@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using QaApp.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace QaApp.Controllers
 {
@@ -22,6 +23,18 @@ namespace QaApp.Controllers
         public async Task<IActionResult> Index()
         {
             return View(await _context.AppQa.ToListAsync());
+        }
+
+        // GET: AppQas/ShowSearchForm
+        public async Task<IActionResult> ShowSearchForm()
+        {
+            return View();
+        }
+
+        // GET: AppQas/ShowSearchResults
+        public async Task<IActionResult> ShowSearchResults(String SearchPhrase)
+        {
+            return View("Index", await _context.AppQa.Where(j => j.AppVraag.Contains(SearchPhrase)).ToListAsync());
         }
 
         // GET: AppQas/Details/5
@@ -43,6 +56,7 @@ namespace QaApp.Controllers
         }
 
         // GET: AppQas/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
