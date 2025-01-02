@@ -588,3 +588,4 @@ C:/DEV/REPO/QA/TechLAB/QaApp/obj/Debug/net8.0/ref/QaApp.dll
 /Volumes/1GB/tmp/REPO/QA/LEARN/dotNet/QaApp/obj/Debug/net8.0/QaApp.pdb
 /Volumes/1GB/tmp/REPO/QA/LEARN/dotNet/QaApp/obj/Debug/net8.0/QaApp.genruntimeconfig.cache
 /Volumes/1GB/tmp/REPO/QA/LEARN/dotNet/QaApp/obj/Debug/net8.0/ref/QaApp.dll
+/Volumes/1GB/tmp/REPO/QA/LEARN/dotNet/QaApp/obj/Debug/net8.0/QaApp.sourcelink.json
