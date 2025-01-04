@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0BTQ1N6qwwH1l3YvVqha8jbjP1qd5JOvO+MZpYKuMxQ=",
+  "Hash": "mF7pqU+kI3rclqaWk5TmFybqwrirh5SQ9h+Bw0tHJ9o=",
   "Source": "QaApp",
   "BasePath": "_content/QaApp",
   "Mode": "Default",
@@ -1195,6 +1195,25 @@
       "OriginalItemSpec": "/Volumes/1GB/tmp/REPO/QA/LEARN/dotNet/QaApp/obj/Debug/net8.0/scopedcss/projectbundle/QaApp.bundle.scp.css"
     },
     {
+      "Identity": "/Volumes/1GB/tmp/REPO/QA/LEARN/dotNet/QaApp/wwwroot/css/hoverCards.css",
+      "SourceId": "QaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Volumes/1GB/tmp/REPO/QA/LEARN/dotNet/QaApp/wwwroot/",
+      "BasePath": "_content/QaApp",
+      "RelativePath": "css/hoverCards.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/hoverCards.css"
+    },
+    {
       "Identity": "/Volumes/1GB/tmp/REPO/QA/LEARN/dotNet/QaApp/wwwroot/css/site.css",
       "SourceId": "QaApp",
       "SourceType": "Discovered",
@@ -2333,6 +2352,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/Volumes/1GB/tmp/REPO/QA/LEARN/dotNet/QaApp/wwwroot/QaLogo.png",
+      "SourceId": "QaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Volumes/1GB/tmp/REPO/QA/LEARN/dotNet/QaApp/wwwroot/",
+      "BasePath": "_content/QaApp",
+      "RelativePath": "QaLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/QaLogo.png"
     }
   ]
 }

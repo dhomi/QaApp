@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QaApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8112c64faa860d92980bfd9178fa60dbfad6f11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1de83261ae6d97273466e7af4cb243c4474faaa")]
 [assembly: System.Reflection.AssemblyProductAttribute("QaApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QaApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

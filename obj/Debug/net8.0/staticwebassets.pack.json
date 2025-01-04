@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets/QaApp.bundle.scp.css"
     },
     {
+      "Id": "/Volumes/1GB/tmp/REPO/QA/LEARN/dotNet/QaApp/wwwroot/QaLogo.png",
+      "PackagePath": "staticwebassets/QaLogo.png"
+    },
+    {
+      "Id": "/Volumes/1GB/tmp/REPO/QA/LEARN/dotNet/QaApp/wwwroot/css/hoverCards.css",
+      "PackagePath": "staticwebassets/css/hoverCards.css"
+    },
+    {
       "Id": "/Volumes/1GB/tmp/REPO/QA/LEARN/dotNet/QaApp/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

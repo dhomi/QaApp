@@ -4,42 +4,61 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <p>
+            <a asp-action="Create">Create New</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AppVraag)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AppAntwoord)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.AppVraag)
-            </th>
-<!-- 
-           <th>
-                @Html.DisplayNameFor(model => model.AppAntwoord)
-            </th>
--->
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.AppVraag)
-            </td>
-<!--
-            <td>
-                @Html.DisplayFor(modelItem => item.AppAntwoord)
-            </td>
--->
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AppVraag)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AppAntwoord)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <div class="col-12 col-lg-4">
+                            <a class="clean" asp-action="Edit" asp-route-id="@item.Id">
+                            <div class="card box-shadow mx-auto my-5" style="width: 18rem;">
+                                <div class="card-body">
+                                    @Html.DisplayFor(modelItem => item.AppVraag)
+                                    <hr>
+                                    <p class="card-text">@Html.DisplayFor(modelItem => item.AppAntwoord)</p>
+                                </div>
+                                <a href=""><i class="fas fa-disease"></i></a>
+                            </div>
+                            </a>
+                        </div>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+
+
+
+    </div>
+</div>

@@ -79,6 +79,7 @@ namespace QaApp.Controllers
         }
 
         // GET: AppQas/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -130,6 +131,7 @@ namespace QaApp.Controllers
         }
 
         // GET: AppQas/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -150,6 +152,7 @@ namespace QaApp.Controllers
         // POST: AppQas/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var appQa = await _context.AppQa.FindAsync(id);
