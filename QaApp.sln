@@ -3,7 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QaApp/QaApp", "QaApp.csproj", "{B72FB1C5-11A2-4021-83F7-0453C30BA455}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QaApp", "QaApp/QaApp.csproj", "{B72FB1C5-11A2-4021-83F7-0453C30BA455}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QaApp.Tests", "QaApp.Tests/QaApp.Tests.csproj", "{NEW_GUID_HERE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

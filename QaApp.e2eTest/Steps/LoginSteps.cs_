@@ -1,0 +1,54 @@
+using Microsoft.Playwright;
+using TechTalk.SpecFlow;
+using FluentAssertions;
+
+[Binding]
+public class LoginSteps
+{
+    private readonly IPage _page;
+
+    public LoginSteps(ScenarioContext scenarioContext)
+    {
+        _page = scenarioContext.Get<IPage>("page");
+    }
+
+    [Given(@"the user is on the QaApp homepage")]
+    public async Task GivenTheUserIsOnTheQaAppHomepage()
+    {
+        await _page.GotoAsync("http://localhost:5249/Identity/Account/Login");
+    }
+
+    [When(@"I enter valid credentials")]
+    public async Task WhenIEnterValidCredentials()
+    {
+        await _page.FillAsync("#Input_Email", "qa@qa.nl"); // Replace with actual selector and test email
+        await _page.FillAsync("#Input_Password", "qa"); // Replace with actual selector and test password
+    }
+
+    [When(@"I enter invalid credentials")]
+    public async Task WhenIEnterInvalidCredentials()
+    {
+        await _page.FillAsync("#Input_Email", "invaliduser@example.com"); // Replace with actual selector and invalid email
+        await _page.FillAsync("#Input_Password", "InvalidPassword!"); // Replace with actual selector and invalid password
+    }
+
+    [When(@"I click the login button")]
+    public async Task WhenIClickTheLoginButton()
+    {
+        await _page.ClickAsync("#login-submit"); // Replace with actual selector for the login button
+    }
+
+    [Then(@"I should be redirected to the homepage")]
+    public async Task ThenIShouldBeRedirectedToTheHomepage()
+    {
+        var url = _page.Url;
+        url.Should().Be("http://localhost:5249/"); // Replace with actual homepage URL
+    }
+
+    [Then(@"I should see an error message")]
+    public async Task ThenIShouldSeeAnErrorMessage()
+    {
+        var errorMessage = await _page.TextContentAsync(".validation-summary-errors"); // Replace with actual selector for error message
+        errorMessage.Should().NotBeNull();
+    }
+}

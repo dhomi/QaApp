@@ -28,7 +28,6 @@
 
   <ItemGroup>
     <ProjectReference Include="../QaApp/QaApp/QaApp.csproj" />
-    <!-- <ProjectReference Include="..\QaApp\QaApp.csproj" /> -->
   </ItemGroup>
 
 </Project>
