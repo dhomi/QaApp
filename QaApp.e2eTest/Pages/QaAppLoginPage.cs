@@ -26,8 +26,8 @@ public class QaAppHomePage
 
     public async Task EnterValidCredentials()
     {
-        await EmailInput.TypeAsync("qa@qa.nl");
-        await PasswordInput.TypeAsync("qa");
+        await EmailInput.FillAsync("qa@qa.nl");
+        await PasswordInput.FillAsync("qa");
     }
     public async Task ClickLogin()
     {
@@ -41,8 +41,8 @@ public class QaAppHomePage
 
     public async Task EnterInvalidCredentials()
     {
-        await EmailInput.TypeAsync("qa@qas.com");
-        await PasswordInput.TypeAsync("qas");
+        await EmailInput.FillAsync("qa@qas.com");
+        await PasswordInput.FillAsync("qas");
     }
 
     public async Task AssertErrorMessage()
